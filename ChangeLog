@@ -1,0 +1,30 @@
+2011-08-26  bytesplit <bytesplit@googlemail.com>
+
+  * .rvmrc, Gemfile, Gemfile.lock: 2 changes:  added rvmrc for correct gemset
+  initialization. This was actually required by pow, which I test to replace
+  passenger-pane.  Also the gemfiles have been updated to later versions of
+  some gems. 
+
+2011-06-23  bytesplit <bytesplit@googlemail.com>
+
+  * Gemfile.lock: Updated gemfile to get things up and running with latest
+  Rails. 
+
+  * Gemfile: Updated gem file to require Rails 3.0.9. 
+
+  * README.markdown: Is this for real. I guess I need to learn more about using
+  git. 
+
+2011-03-17  bytesplit <bytesplit@googlemail.com>
+
+  * test.txt: 
+
+  * test.txt: 
+
+  * test.txt: 
+
+  * README.markdown: some random change 
+
+2011-03-14  bytesplit <bytesplit@googlemail.com>
+
+  * README, README.markdown: Updated the README with markdown stuff
