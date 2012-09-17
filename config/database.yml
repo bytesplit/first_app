@@ -1,5 +1,9 @@
 common: &common
   adapter: postgresql
+  encoding: unicode
+  pool: 5
+  host: localhost
+  port: 5432
   username: blog
   password: YVLUBjU7fp8qHL # from psql setup, see Postgresql
 
