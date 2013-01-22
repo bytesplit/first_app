@@ -1,29 +1,49 @@
+2013-01-07  Bytesplit <bytesplit@googlemail.com>
+
+  * .rbenv-gemsets, .rbenv-vars, .ruby-version, Gemfile.lock: Updates  Updated
+  rails to 3.0.18 and added more rbenv configuration parameters.
+
+2012-09-17  Bytesplit <bytesplit@googlemail.com>
+
+  * .powrc, .rbenv-gemsets, .rvmrc, config/database.yml, db/schema.rb: Migrate
+  from rvm to rbenv for 10.8  Now all works on 10.8. Database also now uses IP
+  connection to Postgres.app.
+
+2012-08-03  bytesplit <bytesplit@googlemail.com>
+
+  * .rvmrc, Gemfile, Gemfile.lock, config/database.yml,
+  db/migrate/20101019114904_create_posts.rb,
+  db/migrate/20101019120843_create_comments.rb,
+  db/migrate/20101019122852_create_tags.rb, db/schema.rb, db/seeds.rb:
+  Migration to PostgreSQL  As heroku changed their deployment, I choosed to
+  switch completely. 
+
+2012-03-20  bytesplit <bytesplit@googlemail.com>
+
+  * Gemfile, Gemfile.lock, vendor/plugins/.gitkeep,
+  vendor/plugins/dynamic_form/MIT-LICENSE, vendor/plugins/dynamic_form/README,
+  vendor/plugins/dynamic_form/Rakefile,
+  vendor/plugins/dynamic_form/dynamic_form.gemspec,
+  vendor/plugins/dynamic_form/init.rb,
+  .../lib/action_view/helpers/dynamic_form.rb,
+  .../dynamic_form/lib/action_view/locale/en.yml,
+  vendor/plugins/dynamic_form/lib/dynamic_form.rb,
+  .../dynamic_form/test/dynamic_form_i18n_test.rb,
+  .../plugins/dynamic_form/test/dynamic_form_test.rb,
+  vendor/plugins/dynamic_form/test/test_helper.rb: Moved dynamic_form from
+  plugin to gem file in preparation of upgrade to rails 3.1/3.2. 
+
+2012-02-15  bytesplit <bytesplit@googlemail.com>
+
+  * ChangeLog, gen-changelog.sh: ChangeLog generation added  added a tool to
+  generate fancy looking ChangeLog file. 
+
 2011-08-26  bytesplit <bytesplit@googlemail.com>
 
   * .rvmrc, Gemfile, Gemfile.lock: 2 changes:  added rvmrc for correct gemset
   initialization. This was actually required by pow, which I test to replace
   passenger-pane.  Also the gemfiles have been updated to later versions of
   some gems. 
-
-2011-06-23  bytesplit <bytesplit@googlemail.com>
-
-  * Gemfile.lock: Updated gemfile to get things up and running with latest
-  Rails. 
-
-  * Gemfile: Updated gem file to require Rails 3.0.9. 
-
-  * README.markdown: Is this for real. I guess I need to learn more about using
-  git. 
-
-2011-03-17  bytesplit <bytesplit@googlemail.com>
-
-  * test.txt: 
-
-  * test.txt: 
-
-  * test.txt: 
-
-  * README.markdown: some random change 
 
 2011-03-14  bytesplit <bytesplit@googlemail.com>
 
