@@ -41,4 +41,4 @@ gem 'turbolinks'
 
 # Required by heroku
 gem 'rails_12factor', group: :production
-# gem 'unicorn', group: :production
+gem 'unicorn', group: :production
