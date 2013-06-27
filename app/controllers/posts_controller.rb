@@ -43,7 +43,7 @@ class PostsController < ApplicationController
   # POST /posts
   # POST /posts.xml
   def create
-    @post = Post.new(params[:post])
+    @post = Post.create(post_params)
 
     respond_to do |format|
       if @post.save
@@ -62,7 +62,7 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
 
     respond_to do |format|
-      if @post.update_attributes(params[:post])
+      if @post.update_attributes(post_params)
         format.html { redirect_to(@post, :notice => 'Post was successfully updated.') }
         format.xml  { head :ok }
       else
@@ -83,4 +83,13 @@ class PostsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  private
+      # Using a private method to encapsulate the permissible parameters
+      # is just a good pattern since you'll be able to reuse the same
+      # permit list between create and update. Also, you can specialize
+      # this method with per-user checking of permissible attributes.
+      def post_params
+        params.require(:post).permit(:name, :title, :content, tags_attributes: [:name, :_destroy, :id])
+      end
 end
