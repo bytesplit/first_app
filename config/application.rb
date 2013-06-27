@@ -4,9 +4,9 @@ require 'rails/all'
 
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
-  Bundler.require *Rails.groups(:assets => %w(development test))
+  #Bundler.require *Rails.groups(:assets => %w(development test))
   # If you want your assets lazily compiled in production, use this line
-  # Bundler.require(:default, :assets, Rails.env)
+  Bundler.require(:default, :assets, Rails.env)
 end
 
 module Blog
@@ -53,5 +53,10 @@ module Blog
     #config.assets.prefix = '/asset-files'
     
     config.active_record.schema_format = ":ruby"
+    
+    # get precompilation working on heroku:
+    config.assets.initialize_on_precompile = true
+
+    config.serve_static_assets = false
   end
 end
