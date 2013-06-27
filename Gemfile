@@ -37,3 +37,7 @@ gem 'jquery-rails'
 
 # Use turbolinks for js based page refreshs
 gem 'turbolinks'
+
+# Required by heroku
+gem 'rails_12factor', group: :production
+ruby '2.0.0'
