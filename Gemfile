@@ -1,5 +1,5 @@
-ruby '2.0.0'
 source 'http://rubygems.org'
+ruby '2.0.0'
 
 gem 'rails', '~>4.0.0'
 
@@ -41,3 +41,4 @@ gem 'turbolinks'
 
 # Required by heroku
 gem 'rails_12factor', group: :production
+gem 'unicorn', group: :production
