@@ -45,6 +45,7 @@ group :production do
   gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
   gem 'rails_12factor'
   gem 'unicorn'
+  gem 'newrelic_rpm'
 end
 
 gem 'sass-rails',   "~> 4.0.0"
