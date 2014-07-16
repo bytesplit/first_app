@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+ruby '2.1.2'
+#ruby '1.9.3', engine: 'jruby', engine_version: '1.7.9'
 
 gem 'rails', '~>4.0.0'
 
@@ -8,6 +9,8 @@ gem 'rails', '~>4.0.0'
 
 #gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'pg'
+# PG for jruby
+#gem 'activerecord-jdbcpostgresql-adapter'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -44,7 +47,8 @@ group :production do
   gem 'rails_log_stdout',           github: 'heroku/rails_log_stdout'
   gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
   gem 'rails_12factor'
-  gem 'unicorn'
+  #gem 'unicorn'
+  gem 'puma'
   gem 'newrelic_rpm'
 end
 
